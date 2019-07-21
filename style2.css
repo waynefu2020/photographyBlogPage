@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
+/* Global */
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  background: #eeeeee;
+}
+#main-text {
+  height: 100vh;
+}
+#main-text h1 {
+  text-transform: uppercase;
+  margin-bottom: 0; 
+}
+.button {
+  
+}
