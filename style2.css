@@ -9,8 +9,24 @@ body {
 }
 #main-text h1 {
   text-transform: uppercase;
-  margin-bottom: 0; 
+  margin-bottom: 0;
+  font-size: 2.5rem;
+  font-weight: 400; 
+}
+#main-image {
+  background-image: url(https://source.unsplash.com/QmnqIkL2fK8);
+  background-size: cover;
+  background-repeat: no-repeat; 
+}
+#main-text p {
+  margin-top: 0; 
+  font-size: 1rem;
+  margin-bottom: 1rem; 
 }
 .button {
-  
+  color: #333;
+  text-decoration: none;
+  border: #333 1px solid;
+  padding: 1rem;
+  border-radius: 20px;
 }
