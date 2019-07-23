@@ -27,26 +27,26 @@ img {
 main {
   max-width: 900px;
   margin: auto;
-  box-shadow: 30px 0 40px rgba(0, 0, 0, 0.1),
-  -30 0 40px rgba(0, 0, 0, 0.1);
+  box-shadow: 40px 0 30px rgba(0, 0, 0, 0.1),
+  -30px 0 40px rgba(0, 0, 0, 0.1);
 }
 #main-text {
   background: #fff;
 }
 #main-image {
-  background-image: url(https://source.unsplash.com/QmnqIkL2fK8);
+  background-image: url(/mainimage1.jpg);
   background-size: cover;
   background-repeat: no-repeat; 
   background-position: center;
-  height: 50vh;
-  flex: 0 1 30vw;
+  height: 100vh;
+  flex: 0 1 60vh;
   margin: 0;
 }
 #main-text-inner {
   display: flex;
   flex-direction: column;
   flex: 1 0 30vw;
-  height: 40vh;
+  height: 100vh;
   justify-content: center;
   align-items: center;
   padding-left: 1rem;
@@ -66,13 +66,14 @@ main {
   padding-right: 1rem;
 }
 .button {
+  font-size: 1.1rem;
   display: inline-block;
   color: #333;
   text-decoration: none;
   border: #ccc 1px solid;
-  padding: 0.5rem 2rem;
+  padding: 1rem 2rem;
   border-radius: 30px;
-  margin: 1rem;
+  margin: 0.5rem;
   transition: background 100ms ease; 
 }
 .button:hover {
@@ -84,9 +85,30 @@ main {
 }
 footer {
   text-align: center;
-  padding: 1rem;
+  padding: 1rem 2rem;
 }
 footer h3 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-bottom: 0;
+}
+
+/* screen size 500px and up */
+@media(min-width: 500px) {
+  #main-text {
+    display: flex;
+    height: 100%;
+  }
+  #main-text-inner {
+    height: 100vh;
+  }
+  #landing-image {
+    height: 100vh;
+  }
+}
+
+/* screens sizes 700px and up */
+@media(min-width: 700px) {
+  .button {
+    padding: 1rem 3rem;
+  }
 }
